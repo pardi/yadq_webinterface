@@ -1,0 +1,21 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Calculator</title>
+</head>
+<body>
+    <input id="input" type="number" min="0">
+    <button onclick="calculate()">Calculate Fibonacci</button>
+    <p id="output"></p>
+    <script src="fib.js"></script>
+    <script>
+        const calculate = () => {
+            const n = document.getElementById('input').value;
+            const result = Module.fib(n);
+            document.getElementById('output').textContent = result;
+        };
+    </script>
+</body>
+</html>
+
